@@ -1,2 +1,23 @@
+body {
+    background-color: whitesmoke;
+}
+
+.results-summary-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 768px) {
+    .results-summary-container {
+      /* Desktop: 2 columns side by side */
+      grid-template-columns: 1fr 1fr;
+    }
+  }
