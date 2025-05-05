@@ -1,3 +1,9 @@
+:root {
+    --card-background: hsl(0, 0%, 100%);
+    --result-text:  hsl(241, 100%, 89%);
+    --result-alt-text: hsl(221, 100%, 96%);
+}
+
 body {
     background-color: hsl(221, 100%, 96%);
     margin: 0; /* for mobile only */
@@ -6,7 +12,7 @@ body {
 .results-summary-container {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: white;
+    background-color: var(--card-background);
 }
 
 .results-container {
@@ -24,10 +30,14 @@ body {
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%)) ;
     border-bottom-left-radius: 8%; /* for mobile only - change dir for desktop */
     border-bottom-right-radius: 8%; /* for mobile only - change dir for desktop */
+    color: var(--result-text);
+    .score-number, h2 {
+        color: var(--result-alt-text);
+    }
 }
 
 .summary-container {
-    background-color: white;
+    background-color: var(--card-background);
 }
 
 .attribution { font-size: 11px; text-align: center; }
