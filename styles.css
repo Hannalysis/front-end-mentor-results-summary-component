@@ -9,6 +9,20 @@ body {
     margin: 0; /* for mobile only */
 }
 
+h1 {
+    font-size: 100%;
+    margin: 5%;
+    margin-bottom: 10%;
+}
+
+h2 {
+    margin-bottom: 2%;
+}
+
+p {
+    font-size: 18px;
+}
+
 .results-summary-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -31,9 +45,23 @@ body {
     border-bottom-left-radius: 8%; /* for mobile only - change dir for desktop */
     border-bottom-right-radius: 8%; /* for mobile only - change dir for desktop */
     color: var(--result-text);
-    .score-number, h2 {
+    #score-number, h2 {
         color: var(--result-alt-text);
     }
+}
+
+#score-number {
+    font-size: 300%;
+    font-weight: bold;
+} 
+
+.score-total {
+    margin-top: 5%;
+}
+
+#score-comparison-text {
+    margin: 10%;
+    margin-top: 0;
 }
 
 .summary-container {
