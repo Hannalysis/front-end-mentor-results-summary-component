@@ -31,9 +31,9 @@ p {
 
 .results-container {
     background: linear-gradient(to bottom, hsla(252, 100%, 67%, 1), hsla(241, 81%, 54%, 1));
-    padding: 4px; /* border thickness */
-    border-bottom-left-radius: 8%; /* for mobile only - change dir for desktop */
-    border-bottom-right-radius: 8%; /* for mobile only - change dir for desktop */
+    padding: 4px; /* aka imitation border thickness */
+    border-bottom-left-radius: 8%; 
+    border-bottom-right-radius: 8%; 
 }
 
 .results-content-container {
@@ -42,8 +42,8 @@ p {
     align-items: center;
     text-align: center;
     background: linear-gradient(to bottom, hsla(252, 100%, 67%, 0.5), hsla(241, 81%, 54%, 1)) ;
-    border-bottom-left-radius: 8%; /* for mobile only - change dir for desktop */
-    border-bottom-right-radius: 8%; /* for mobile only - change dir for desktop */
+    border-bottom-left-radius: 8%; 
+    border-bottom-right-radius: 8%; 
     color: var(--result-text);
     #score-number, h2 {
         color: var(--result-alt-text);
@@ -51,25 +51,31 @@ p {
 }
 
 .score-circle {
-    /* background: radial-gradient(circle,  hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)); */
     background: radial-gradient(circle at center top,  hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     padding: 2.5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#score-number-and-total {
+    display: flex;
+    flex-direction: column;
+}
+
 #score-number {
     font-size: 300%;
     font-weight: bold;
-    margin-top: 20%;
+    margin-top: 25%;
 } 
 
 .score-total {
-    margin-top: 5%;
+    margin-top: 0%;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 #score-comparison-text {
@@ -85,10 +91,28 @@ p {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+/* @media(min-width: 400px) {
+    .score-circle {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+} */
+
 
 @media (min-width: 768px) {
     .results-summary-container {
       /* Desktop: 2 columns side by side */
       grid-template-columns: 1fr 1fr;
+      max-width: 600px;      
+      margin: 15% auto;    /* Centers horizontally + pushes it down the page */      
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  /* Cardify */
+      border-radius: 8%;
+    }
+    .results-container{
+        border-radius: 8%;
+    }
+    .results-content-container{
+        border-radius: 8%;
     }
   }
