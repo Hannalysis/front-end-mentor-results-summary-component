@@ -52,7 +52,7 @@ p {
 
 .score-circle {
     background: radial-gradient(circle at center top,  hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    padding: 2.5%;
+    padding: 0.5rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     border-radius: 50%;
@@ -90,14 +90,6 @@ p {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
-
-/* @media(min-width: 400px) {
-    .score-circle {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-
-} */
 
 
 @media (min-width: 768px) {
