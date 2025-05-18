@@ -86,6 +86,8 @@ p {
 
 .summary-container {
     background-color: var(--card-background);
+    border-radius: 8%;
+    min-height: 50vh;
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -106,5 +108,8 @@ p {
     }
     .results-content-container{
         border-radius: 8%;
+    }
+    .summary-container {
+        min-height: 0vh;
     }
   }
