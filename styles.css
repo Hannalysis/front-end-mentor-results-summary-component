@@ -41,7 +41,7 @@ p {
     background: linear-gradient(to bottom, hsla(252, 100%, 67%, 1), hsla(241, 81%, 54%, 1));
     padding: 4px; /* aka imitation border thickness */
     border-bottom-left-radius: 8%; 
-    border-bottom-right-radius: 8%; 
+    border-bottom-right-radius: 8%;
 }
 
 .results-content-container {
@@ -88,7 +88,6 @@ p {
 #score-comparison-text {
     margin: 5%;
     margin-top: 0;
-    margin-bottom: 10%;
 }
 
 /* --- Summary Section --- */
@@ -104,6 +103,8 @@ p {
 
 #summary-title {
     color: var(--summary-text);
+    margin-top: 0;
+    margin-left: 0;
 }
 
 .all-sub-sections {
@@ -183,17 +184,22 @@ p {
     .results-summary-container {
       /* Desktop: 2 columns side by side */
       grid-template-columns: 1fr 1fr;
-      max-width: 600px;      
+      max-width: 37.5rem;      
       margin: 15% auto;    /* Centers horizontally + pushes it down the page */      
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  /* Cardify */
       border-radius: 8%;
-      min-height: 0; 
+      min-height: 25rem; 
     }
-    .results-container{
+    .results-container {
         border-radius: 8%;
+        display: flex;
     }
-    .results-content-container{
+    .results-content-container {
         border-radius: 8%;
+        justify-content: space-around;
+    }
+    #score-comparison-text {
+        margin-bottom: 10%;
     }
     .summary-container {
         min-height: 0vh;
