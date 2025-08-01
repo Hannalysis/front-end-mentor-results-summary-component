@@ -2,6 +2,11 @@
     --card-background: hsl(0, 0%, 100%);
     --result-text:  hsl(241, 100%, 89%);
     --result-alt-text: hsl(221, 100%, 96%);
+    --summary-text: hsla(0, 0%, 0%, 0.8);
+    --light-red: hsl(0, 100%, 67%);
+    --light-yellow: hsl(39, 100%, 56%);
+    --light-green: hsl(166, 100%, 37%);
+    --light-blue: hsl(234, 85%, 45%);
 }
 
 body {
@@ -29,6 +34,8 @@ p {
     background-color: var(--card-background);
     min-height: 100vh; 
 }
+
+/* --- Results Section --- */
 
 .results-container {
     background: linear-gradient(to bottom, hsla(252, 100%, 67%, 1), hsla(241, 81%, 54%, 1));
@@ -84,6 +91,8 @@ p {
     margin-bottom: 10%;
 }
 
+/* --- Summary Section --- */
+
 .summary-container {
     background-color: var(--card-background);
     border-radius: 8%;
@@ -93,28 +102,71 @@ p {
     flex-direction: column;
 }
 
-.all-sections {
+#summary-title {
+    color: var(--summary-text);
+}
+
+.all-sub-sections {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    gap: 0.75rem;
+    font-weight: bold;
 }
 
 .section-container {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    border-radius: 8px;
+}
+
+.section-container.red {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    .reaction {
+        color: var(--light-red);
+    }
+}
+
+.section-container.yellow {
+    background-color: hsl(39, 100%, 56%, 0.1);
+    .memory {
+        color: var(--light-yellow);
+    }
+}
+
+.section-container.green {
+    background-color: hsl(166, 100%, 37%, 0.1);
+    .verbal {
+        color: var(--light-green);
+    }
+}
+
+.section-container.blue {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    .visual {
+        color: var(--light-blue);
+    }
 }
 
 .type-and-icon {
     display: flex;
 }
 
-.button-container {
-    flex-shrink: 1;
-}
-
 .summary-icons {
     padding-right: 0.5rem;
+}
+
+.type-score {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sub-section-score {
+    color: var(--summary-text);
+}
+
+.button-container {
+    flex-shrink: 1;
 }
 
 .attribution { 
