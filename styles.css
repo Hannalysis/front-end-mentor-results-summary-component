@@ -77,8 +77,8 @@ button:hover {
 .score-circle {
     background: radial-gradient(circle at center top,  hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     padding: 0.5rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
