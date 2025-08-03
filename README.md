@@ -48,12 +48,12 @@ Users should be able to:
 
 <i>Screenshot for the active states:</i>  
   
-![](./readme-images/My_Solution_for_active_states.JPG)
+![](./readme-images/My_Solution_for_active_states.jpg)
 
 <i>Screenshot for the mobile design:</i>  
   
 <p align="center">
-  <img src="./readme-images/My_Solution_for_mobile_design.JPG" alt="The Original - Mobile Design">
+  <img src="./readme-images/My_Solution_for_mobile_design.jpg" alt="The Original - Mobile Design">
 </p>
 
 ### Links
