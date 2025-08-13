@@ -1,20 +1,3 @@
-
-// // Reaction
-// reactionContainer = document.querySelector(".section-container.red .type-score span")
-// reactionContainer.textContent = 10;
-
-// // Memory 
-// memoryContainer = document.querySelector(".section-container.yellow .type-score span")
-// memoryContainer.textContent = 10;
-
-// // Verbal 
-// verbalContainer = document.querySelector(".section-container.green .type-score span")
-// verbalContainer.textContent = 10;
-
-// // Visual 
-// visualContainer = document.querySelector(".section-container.blue .type-score span")
-// visualContainer.textContent = 10;
-
 fetch('./data.json')
   .then(res => res.json())
   .then(data => {
