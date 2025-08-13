@@ -115,7 +115,9 @@ My first time utilising a responsive CSS grid, I wish I had more reason to expla
 
 ### Continued development
 
-For my first update, I want to complete the bonus objective, which is to utilise the JSON file to dynamically populate the summary content.
+<h5><u>Update 1 - Completed 2025/08/13</u></h5>
+
+- Completed the bonus objective: To utilise the JSON file to dynamically populate the summary content with JS.
 
 
 ## Author
